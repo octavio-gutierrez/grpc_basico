@@ -1,0 +1,11 @@
+syntax = "proto3";
+package holamundo;
+service Saludador {
+    rpc diHola (HelloRequest) returns (HelloReply) {} 
+}
+message HelloRequest {
+    optional string name = 1; 
+}
+message HelloReply {
+    optional string message = 1;
+}
